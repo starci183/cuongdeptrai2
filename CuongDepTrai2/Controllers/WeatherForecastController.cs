@@ -26,7 +26,7 @@ namespace CuongDepTrai2.Controllers
             return context.Flowers.ToList();
         }
 
-        [HttpGet(Name = "Deptrai")]
+        [HttpGet("deptrai", Name = "Deptrai")]
         public IList<Flower> Deptrai()
         {
             var context = new FlowerContext();
